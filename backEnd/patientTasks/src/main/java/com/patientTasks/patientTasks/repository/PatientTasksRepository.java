@@ -19,4 +19,5 @@ public interface PatientTasksRepository extends JpaRepository<PatientTasks,Integ
 
     @Query(value = "SELECT `task_id` FROM `patient_tasks` WHERE `patient_id` =:taskId",nativeQuery = true)
     public List<Integer> getTaskIdList(@Param("taskId")int id);
+
 }

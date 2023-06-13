@@ -23,7 +23,8 @@ public class PatientServiceImpl implements PatientService{
     private PatientTasksRepository patientTasksRepository;
 
     @Override
-    public List<TaskPatientCompainDto> viewPatientTaskById(int id) {
+    public List<TaskPatientCompainDto>
+    viewPatientTaskById(int id) {
         return patientTasksRepository.viewTaskByPatientId(id);
     }
 

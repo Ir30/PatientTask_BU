@@ -20,7 +20,6 @@ public class PatientRepoTest {
         Patient p =new Patient(1,"melvin","1212","male","10/05/1999","kochi",25);
         patientRepository.save(p);
         Patient found = patientRepository.findById(p.getId());
-
         Assertions.assertThat(found.getPatientName()).isEqualTo(p.getPatientName());
         Assertions.assertThat(found.getAge()).isEqualTo(p.getAge());
     }
